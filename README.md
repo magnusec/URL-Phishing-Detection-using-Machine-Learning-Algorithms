@@ -4,8 +4,7 @@
 ## Problem Statement
 Phishing attacks use deceptive URLs to trick users into revealing sensitive information such as login credentials, banking details, and personal data. Traditional blacklist-based approaches fail to detect newly generated phishing URLs. This project aims to build a machine learning–based phishing URL detection system that classifies URLs as **Phishing** or **Legitimate** using structural and lexical URL features.
 
-This work is inspired by and aligned with an IEEE research paper on phishing URL detection using classical machine learning algorithms.  
-The research paper served as a **methodological and evaluation reference**, and **entire implementation, experimentation, dataset handling, model training, and web deployment were carried out** as part of this project.
+This work is the inspiration for an IEEE research paper on phishing URL detection using classical machine learning algorithms. The research paper served as a **methodological and evaluation reference**, and **entire implementation, experimentation, dataset handling, model training, and web deployment were carried out** as part of this project. This project uses other 2 datasets than in the paper due to more realistic data that helps in detecting phishing URL's more efficiently.
 
 https://ieeexplore.ieee.org/document/11208974
 

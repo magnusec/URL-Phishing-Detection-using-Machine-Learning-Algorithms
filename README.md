@@ -9,7 +9,7 @@ The research paper served as a **methodological and evaluation reference**, and 
 
 https://ieeexplore.ieee.org/document/11208974
 
----
+--
 
 ## Project Overview
 This project implements and compares multiple machine learning models to detect phishing URLs. The models are trained on multiple datasets and evaluated using accuracy, precision, recall, and F1-score. The best-performing model is deployed using a Flask web application that allows users to input a URL and receive a real-time phishing prediction.

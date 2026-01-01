@@ -16,18 +16,8 @@ This project implements and compares multiple machine learning models to detect 
 
 Dataset 3 was selected for deployment as it provides better real-world generalization due to its size, diversity, and feature distribution.
 
----
+--
 
-## Machine Learning Models Used
-- Decision Tree
-- Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
-- Naive Bayes
-
-Random Forest achieved the best overall performance and was selected as the final model for deployment.
-
----
 
 ## Project Flow
 1. Dataset collection and inspection
@@ -35,11 +25,11 @@ Random Forest achieved the best overall performance and was selected as the fina
 3. Train–test split with stratification
 4. Model training and evaluation
 5. Metrics comparison across models and datasets
-6. Model serialization using `.pkl`
-7. Flask-based web application deployment
-8. URL prediction and logging
+6. Flask-based web application deployment
 
----
+
+--
+
 
 ## Final Dataset Used for Deployment
 - **Dataset 3 (web-page-phishing.csv)**
@@ -55,39 +45,31 @@ Random Forest achieved the best overall performance and was selected as the fina
 - Dataset 2 - https://www.kaggle.com/datasets/shashwatwork/phishing-dataset-for-machine-learning
 - Dataset 3 - https://www.kaggle.com/datasets/shashwatwork/web-page-phishing-detection-dataset
   
----
+--
+
 
 ## Repository Structure
 
+
 phishing-url-detection/
-├── data/
-├── src/
-├── flask_app/
-├── models/
-├── requirements.txt
-├── README.md
+data/ – datasets used for training & testing
+src/ – ML training, evaluation, preprocessing code
+flask_app/ – Flask web application (UI + backend)
+models/ – trained model files (.pkl) and links
+comparisons/ – metrics CSVs and dataset comparison results
+requirements.txt – project dependencies
 
 
+--
 
-
----
-
-## Flask Web Application
-The Flask application allows users to:
-- Enter a URL
-- Predict whether it is **Phishing** or **Legitimate**
-- View results instantly
-- Log checked URLs automatically
-- Export prediction logs as CSV
-
----
 
 ## Model Files
 The trained Random Forest model for Dataset 3 is large in size and exceeds GitHub’s file size limits.  
 Therefore, it is hosted externally, and a download link is provided inside the `models/` directory.
 However Dataset 1 & 2 models are available for direct download in `models/`
 
----
+--
+
 
 ## Technologies Used
 - Python 3
@@ -98,7 +80,18 @@ However Dataset 1 & 2 models are available for direct download in `models/`
 - joblib
 - HTML / CSS (for frontend)
 
----
+--
+
+## Machine Learning Models Used
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- Naive Bayes
+
+Random Forest achieved the best overall performance and was selected as the final model for deployment.
+
+--
 
 ## Evaluation Metrics
 - Accuracy
@@ -109,15 +102,48 @@ However Dataset 1 & 2 models are available for direct download in `models/`
 
 Accuracy alone was not considered sufficient due to the security-sensitive nature of phishing detection.
 
----
+--
+
+## Flask Web Application
+The Flask application allows users to:
+- Enter a URL
+- Predict whether it is **Phishing** or **Legitimate**
+- View results instantly
+- Log checked URLs automatically
+- Export prediction logs as CSV
+
+--
+
+
+## How to run project
+
+1. Create and activate a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+2. Install required dependencies:
+pip install -r requirements.txt
+
+3. Run the Flask web application:
+cd flask_app
+python app.py
+
+4. Follow the link
+
+5. Enter a URL in the input field to check whether it is Phishing or Legitimate.
+
+--
+
+
 
 ## Future Enhancements
 - Real-time browser extension
 - Deep learning–based models
 - Cloud deployment
 
----
+--
 
-## Author
-Atharva Kasar  
-Cybersecurity & Machine Learning Project
+
+
+

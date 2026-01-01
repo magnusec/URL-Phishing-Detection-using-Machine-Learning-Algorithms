@@ -51,11 +51,11 @@ Dataset 3 was selected for deployment as it provides better real-world generaliz
 
 
 phishing-url-detection/
+- comparisons/ – metrics CSVs and dataset comparison results
 - data/ – datasets used for training & testing
-- src/ – ML training, evaluation, preprocessing code
 - flask_app/ – Flask web application (UI + backend)
 - models/ – trained model files (.pkl) and links
-- comparisons/ – metrics CSVs and dataset comparison results
+- src/ – ML training, evaluation, preprocessing code
 - requirements.txt – project dependencies
 
 

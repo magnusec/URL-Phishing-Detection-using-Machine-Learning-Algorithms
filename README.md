@@ -51,12 +51,12 @@ Dataset 3 was selected for deployment as it provides better real-world generaliz
 
 
 phishing-url-detection/
-- comparisons/ – metrics CSVs and dataset comparison results
-- data/ – datasets used for training & testing
-- flask_app/ – Flask web application (UI + backend)
-- models/ – trained model files (.pkl) and links
-- src/ – ML training, evaluation, preprocessing code
-- requirements.txt – project dependencies
+- `comparisons/` – metrics CSVs and dataset comparison results
+- `data/` – datasets used for training & testing
+- `flask_app/` – Flask web application (UI + backend)
+- `models/` – trained model files (.pkl) and links
+- `src/` – ML training, evaluation, preprocessing code
+- `requirements.txt` – project dependencies
 
 
 
@@ -117,15 +117,15 @@ The Flask application allows users to:
 ## How to run project
 
 1. Create and activate a virtual environment:
-python3 -m venv venv
-source venv/bin/activate
+`python3 -m venv venv`
+`source venv/bin/activate`
 
 2. Install required dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 3. Run the Flask web application:
-cd flask_app
-python app.py
+`cd flask_app`
+`python app.py`
 
 4. Follow the link
 

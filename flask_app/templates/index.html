@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing URL Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Phishing URL Detection</h1>
+
+    <form method="POST" onsubmit="showSpinner()">
+        <input type="text" name="url" placeholder="Enter URL here" required value="{{ url_value or '' }}">
+        <button type="submit">Check URL</button>
+    </form>
+
+    <div id="spinner" class="spinner"></div>
+
+    {% if prediction %}
+        <div class="result">{{ prediction }}</div>
+    {% endif %}
+
+    <a href="/export-logs">
+        <button class="export-btn">Download Logs (CSV)</button>
+    </a>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

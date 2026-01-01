@@ -120,7 +120,7 @@ The Flask application allows users to:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```bash
 2. Install required dependencies:
 pip install -r requirements.txt
 

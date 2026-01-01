@@ -117,10 +117,9 @@ The Flask application allows users to:
 ## How to run project
 
 1. Create and activate a virtual environment:
-```bash
 python3 -m venv venv
 source venv/bin/activate
-```bash
+
 2. Install required dependencies:
 pip install -r requirements.txt
 

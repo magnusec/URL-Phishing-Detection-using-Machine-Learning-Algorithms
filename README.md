@@ -9,14 +9,14 @@ The research paper served as a **methodological and evaluation reference**, and 
 
 https://ieeexplore.ieee.org/document/11208974
 
---
+
 
 ## Project Overview
 This project implements and compares multiple machine learning models to detect phishing URLs. The models are trained on multiple datasets and evaluated using accuracy, precision, recall, and F1-score. The best-performing model is deployed using a Flask web application that allows users to input a URL and receive a real-time phishing prediction.
 
 Dataset 3 was selected for deployment as it provides better real-world generalization due to its size, diversity, and feature distribution.
 
---
+
 
 
 ## Project Flow
@@ -28,7 +28,7 @@ Dataset 3 was selected for deployment as it provides better real-world generaliz
 6. Flask-based web application deployment
 
 
---
+
 
 
 ## Final Dataset Used for Deployment
@@ -45,7 +45,7 @@ Dataset 3 was selected for deployment as it provides better real-world generaliz
 - Dataset 2 - https://www.kaggle.com/datasets/shashwatwork/phishing-dataset-for-machine-learning
 - Dataset 3 - https://www.kaggle.com/datasets/shashwatwork/web-page-phishing-detection-dataset
   
---
+
 
 
 ## Repository Structure
@@ -60,7 +60,7 @@ comparisons/ – metrics CSVs and dataset comparison results
 requirements.txt – project dependencies
 
 
---
+
 
 
 ## Model Files
@@ -68,7 +68,7 @@ The trained Random Forest model for Dataset 3 is large in size and exceeds GitHu
 Therefore, it is hosted externally, and a download link is provided inside the `models/` directory.
 However Dataset 1 & 2 models are available for direct download in `models/`
 
---
+
 
 
 ## Technologies Used
@@ -80,7 +80,7 @@ However Dataset 1 & 2 models are available for direct download in `models/`
 - joblib
 - HTML / CSS (for frontend)
 
---
+
 
 ## Machine Learning Models Used
 - Decision Tree
@@ -89,9 +89,9 @@ However Dataset 1 & 2 models are available for direct download in `models/`
 - K-Nearest Neighbors (KNN)
 - Naive Bayes
 
-Random Forest achieved the best overall performance and was selected as the final model for deployment.
+Random Forest achieved the best overall performance and was selected as the final model for deployment. It achieved the accuracy of 0.9775, 0.9749 and 0.8814 or Datasets 1, 2 & 3 respectively.
 
---
+
 
 ## Evaluation Metrics
 - Accuracy
@@ -102,7 +102,7 @@ Random Forest achieved the best overall performance and was selected as the fina
 
 Accuracy alone was not considered sufficient due to the security-sensitive nature of phishing detection.
 
---
+
 
 ## Flask Web Application
 The Flask application allows users to:
@@ -112,7 +112,7 @@ The Flask application allows users to:
 - Log checked URLs automatically
 - Export prediction logs as CSV
 
---
+
 
 
 ## How to run project
@@ -133,7 +133,7 @@ python app.py
 
 5. Enter a URL in the input field to check whether it is Phishing or Legitimate.
 
---
+
 
 
 
@@ -141,9 +141,4 @@ python app.py
 - Real-time browser extension
 - Deep learning–based models
 - Cloud deployment
-
---
-
-
-
 

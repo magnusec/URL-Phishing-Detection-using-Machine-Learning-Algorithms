@@ -56,8 +56,10 @@ phishing-url-detection/
 - `flask_app/` – Flask web application (UI + backend)
 - `models/` – trained model files (.pkl) and links
 - `src/` – ML training, evaluation, preprocessing code
-- `requirements.txt` – project dependencies
+- `Project Report` - Detailed Report of project
 - `demo` - short demonstration video of project working
+- `requirements.txt` – project dependencies
+  
 
 
 

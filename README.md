@@ -57,6 +57,7 @@ phishing-url-detection/
 - `models/` – trained model files (.pkl) and links
 - `src/` – ML training, evaluation, preprocessing code
 - `requirements.txt` – project dependencies
+- `demo` - short demonstration video of project working
 
 
 
